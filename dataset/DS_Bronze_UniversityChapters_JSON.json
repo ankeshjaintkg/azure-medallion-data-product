@@ -22,7 +22,7 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "raw.json",
 				"folderPath": {
-					"value": "@concat(dataset().p_filefolder,'/run_date_time=', formatDateTime(utcNow(), 'yyyyMMdd_HHmmss'))",
+					"value": "@concat(dataset().p_filefolder,'/', formatDateTime(utcNow(), 'yyyyMMdd_HHmmss'))",
 					"type": "Expression"
 				},
 				"fileSystem": {
