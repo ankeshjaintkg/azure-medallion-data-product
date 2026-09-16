@@ -1,0 +1,36 @@
+{
+	"name": "DS_Bronze_UniversityChapters_JSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_UniversityChapters",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_fileSystem": {
+				"type": "string",
+				"defaultValue": "bronze"
+			},
+			"p_fileFolder": {
+				"type": "string",
+				"defaultValue": "university_chapters"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "raw.json",
+				"folderPath": {
+					"value": "@concat(dataset().p_filefolder,'/', formatDateTime(utcNow(), 'yyyyMMdd_HHmmss'))",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().p_fileSystem",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "DS_UniversityChapters_REST",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ArcGIS_UniversityChapters",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_relative_url": {
+				"type": "string",
+				"defaultValue": "5I7u4SJE1vUr79JC/arcgis/rest/services/UniversityChapters_Public/FeatureServer/0/query?where=State%20IN%20(%27CA%27,%27OR%27,%27WA%27)&outFields=*&returnGeometry=true&f=json"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().p_relative_url",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}

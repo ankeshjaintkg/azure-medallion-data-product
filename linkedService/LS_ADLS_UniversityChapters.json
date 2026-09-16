@@ -1,0 +1,11 @@
+{
+    "name": "LS_ADLS_UniversityChapters",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "AzureBlobFS",
+        "typeProperties": {
+            "url": "https://deunivchapters2026.dfs.core.windows.net/"
+        }
+    }
+}

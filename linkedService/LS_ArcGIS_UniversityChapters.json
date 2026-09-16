@@ -1,0 +1,12 @@
+{
+	"name": "LS_ArcGIS_UniversityChapters",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://services2.arcgis.com",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
