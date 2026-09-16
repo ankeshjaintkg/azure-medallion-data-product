@@ -1,0 +1,30 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "ChapterID": "TEST-INVALID-001",
+        "University_Chapter": "Test Invalid Coordinates",
+        "City": "Los Angeles",
+        "State": "CA",
+        "OBJECTID": 9001
+      },
+      "geometry": {
+        "x": 250,
+        "y": 35
+      }
+    },
+    {
+      "attributes": {
+        "ChapterID": "TEST-WARNING-001",
+        "University_Chapter": "Test Missing City",
+        "City": "UNKNOWN",
+        "State": "CA",
+        "OBJECTID": 9002
+      },
+      "geometry": {
+        "x": -118.2437,
+        "y": 34.0522
+      }
+    }
+  ]
+}
