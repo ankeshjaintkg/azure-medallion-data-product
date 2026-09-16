@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@concat('university_chapters','/date= @formatDateTime(utcNow(), \"yyyy-MM-dd\")')\n",
+					"value": "@concat('university_chapters','/date=', formatDateTime(utcNow(), 'yyyy-MM-dd'))\n",
 					"type": "Expression"
 				},
 				"fileSystem": "bronze"
