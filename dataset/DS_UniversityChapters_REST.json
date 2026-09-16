@@ -1,0 +1,15 @@
+{
+	"name": "DS_UniversityChapters_REST",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ArcGIS_UniversityChapters",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "arcgis/rest/services/UniversityChapters_Public/FeatureServer/0/query"
+		},
+		"schema": []
+	}
+}
