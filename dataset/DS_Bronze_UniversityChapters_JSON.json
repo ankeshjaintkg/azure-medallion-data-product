@@ -5,16 +5,29 @@
 			"referenceName": "LS_ADLS_UniversityChapters",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"p_fileSystem": {
+				"type": "string",
+				"defaultValue": "bronze"
+			},
+			"p_fileFolder": {
+				"type": "string",
+				"defaultValue": "university_chapters"
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@concat('university_chapters','/date=', formatDateTime(utcNow(), 'yyyy-MM-dd'))\n",
+					"value": "@concat(dataset().p_filefolder,'/run_date_time=', formatDateTime(utcNow(), 'yyyy-MM-dd hh:mm:ss'))",
 					"type": "Expression"
 				},
-				"fileSystem": "bronze"
+				"fileSystem": {
+					"value": "@dataset().p_fileSystem",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {}
