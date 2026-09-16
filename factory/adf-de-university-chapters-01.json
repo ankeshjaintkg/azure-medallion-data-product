@@ -1,0 +1,15 @@
+{
+	"name": "adf-de-university-chapters-01",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6bde78bf-5a1e-42ce-8f98-e3cb0a44c215",
+		"tenantId": "d1bd56f7-d385-479e-9356-18ad6cd7bf71"
+	}
+}
